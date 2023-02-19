@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #DEC29D;
+  color: white;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.hat_cont {
+  height: 157px;
+  display: flex;
+}
+
+#hat {
+  font-style: italic;
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin: auto;
+}
+
+.wrapper {
+  margin: 0 17%;
+}
+
+#img_cont img {
+  width: 100%;
+  height: auto;
+  border-radius: 38px;
+}
+
+#img_cont span {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#img_quote textarea {
+  width: 360px;
+  height: 104px;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  background-color: transparent;
+  color: #fff;
+}
+
+.coffee_text {
+  position: relative;
+}
+.coffee_text button {
+  color: white;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 0px 0px;
+  font-size: 13px;
+  width: 75px;
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
+
+.coffee_block {
+  margin: 96px 0;
+  display: grid;
+}
+.coffee_block_espresso, .coffee_block_makkiato, .coffee_block_latte, .coffee_block_mokka, .coffee_block_americano, .coffee_block_kapuchino {
+  border: solid black 1px;
+  border-radius: 20px;
+  position: relative;
+}
+.coffee_block_espresso {
+  background-color: hsl(25deg, 100%, 9%);
+}
+.coffee_block_makkiato {
+  background-color: hsl(25deg, 100%, 20%);
+}
+.coffee_block_latte {
+  background-color: hsl(25deg, 73%, 36%);
+}
+.coffee_block_mokka {
+  background-color: hsl(25deg, 100%, 21%);
+}
+.coffee_block_americano {
+  background-color: hsl(25deg, 100%, 12%);
+}
+.coffee_block_kapuchino {
+  background-color: hsl(25deg, 88%, 28%);
+}
+
+.coffee {
+  margin: 30px;
+  color: white;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  height: 150px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  background: #8B4513;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_img {
+  margin: 0;
+  text-align: center;
+}
+
+.footer_feature {
+  margin-left: 68px;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:hover, a:active {
+  text-decoration: none;
+  color: beige;
+}
+a:visited {
+  text-decoration: underline;
+  color: white;
+}

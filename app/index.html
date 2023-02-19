@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Coffee House</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div class="hat_cont">
+        <div id="hat">
+            {{ message }}
+        </div>
+    </div>
+    <div class="wrapper">
+        <div id="img_cont">
+            <div v-bind:title="message">
+                <img src="img/Coffee_bg.jpg">
+            </div>
+        </div>
+        <div id="img_quote">
+            <textarea v-model="message"></textarea>
+        </div>
+        <div class="coffee_block">
+            <div class="coffee_block_espresso">
+                <div id="coffee_block_espresso" class="coffee">
+                    <h2>{{ title }}</h2>
+                    <div class='coffee_text'>
+                        <template v-if="visible">
+                            <p>{{ text }}</p>
+                        </template>
+                        <template v-else>
+                            <p style='text-align: left'>&#9749;7-9 г кофе <br>&#9749;25-35 мл воды</p>
+                        </template>
+                        <button v-on:click="visible=!visible">{{visible?'&#9658;&#9658;&#9658;':'&#9668;&#9668;&#9668;'}}</button>
+                    </div>
+                </div>
+            </div>
+            <div class="coffee_block_makkiato">
+                <div id="coffee_block_makkiato" class="coffee">
+                    <h2>{{ title }}</h2>
+                    <div class='coffee_text'>
+                        <template v-if="visible">
+                            <p>{{ text }}</p>
+                        </template>
+                        <template v-else>
+                            <p style='text-align: left'>&#9749;Вспененное молоко <br>&#9749;Эспрессо</p>
+                        </template>
+                        <button v-on:click="visible=!visible">{{visible?'&#9658;&#9658;&#9658;':'&#9668;&#9668;&#9668;'}}</button>
+                    </div>
+                </div>
+            </div>
+            <div class="coffee_block_latte">
+                <div id="coffee_block_latte" class="coffee">
+                    <h2>{{ title }}</h2>
+                    <div class='coffee_text'>
+                        <template v-if="visible">
+                            <p>{{ text }}</p>
+                        </template>
+                        <template v-else>
+                            <p style='text-align: left'>&#9749;Молоко<br>&#9749;Эспрессо<br>&#9749;Пенка</p>
+                        </template>
+                        <button v-on:click="visible=!visible">{{visible?'&#9658;&#9658;&#9658;':'&#9668;&#9668;&#9668;'}}</button>
+                    </div>
+                </div>
+            </div>
+            <div class="coffee_block_mokka">
+                <div id="coffee_block_mokka" class="coffee">
+                    <h2>{{ title }}</h2>
+                    <div class='coffee_text'>                       
+                        <template v-if="visible">
+                            <p>{{ text }}</p>
+                        </template>
+                        <template v-else>
+                            <p style='text-align: left'>&#9749;Эспрессо <br>&#9749;Молоко 60-70&degC</p>
+                        </template>
+                        <button v-on:click="visible=!visible">{{visible?'&#9658;&#9658;&#9658;':'&#9668;&#9668;&#9668;'}}</button>
+                    </div>                    
+                </div>
+            </div>
+            <div class="coffee_block_americano">
+                <div id="coffee_block_americano" class="coffee">
+                    <h2>{{ title }}</h2>
+                    <div class='coffee_text'>
+                        <template v-if="visible">
+                            <p>{{ text }}</p>
+                        </template>
+                        <template v-else>
+                            <p style='text-align: left'>&#9749;Эспрессо <br>&#9749;Вода 85-90&degC</p>
+                        </template>
+                        <button v-on:click="visible=!visible">{{visible?'&#9658;&#9658;&#9658;':'&#9668;&#9668;&#9668;'}}</button>
+                    </div>
+                </div>
+            </div>
+            <div class="coffee_block_kapuchino">
+                <div id="coffee_block_kapuchino" class="coffee">
+                    <h2>{{ title }}</h2>
+                    <div class='coffee_text'>
+                        <template v-if="visible">
+                            <p>{{ text }}</p>
+                        </template>
+                        <template v-else>
+                            <p style='text-align: left'>&#9749;1/3 эспрессо <br>&#9749;2/3 молочной пены</p>
+                        </template>
+                        <button v-on:click="visible=!visible">{{visible?'&#9658;&#9658;&#9658;':'&#9668;&#9668;&#9668;'}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--wrapper-->
+    <script src='js/index.js'></script>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_img">
+                <a href='index.html'><img src="img/coffeeSign.png"></a>
+            </div>
+            <div class="footer_feature" id="footer_feature_left">
+                <coffee></coffee>                    
+            </div>
+            <div class="footer_feature" id="footer_feature_middle">
+                <coffee></coffee>                    
+            </div>
+            <div class="footer_feature" id="footer_feature_right">
+                <coffee></coffee>                    
+            </div>
+        </div>
+    </footer>
+    <script src='js/footer.js'></script>
+</body>
+</html>

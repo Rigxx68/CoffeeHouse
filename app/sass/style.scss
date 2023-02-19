@@ -1,0 +1,143 @@
+$border: solid black 1px;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #DEC29D;
+    color: white;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+.hat_cont {
+    height: 157px;
+    display: flex;
+}
+#hat {
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: auto;
+}
+
+.wrapper {
+    margin: 0 17%;    
+}
+
+#img_cont{
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 38px;
+    }
+}
+
+#img_cont span {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+#img_quote textarea {
+    width: 360px;
+    height: 104px;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+}
+
+.coffee_text {
+    position: relative;
+    button{
+        color: white;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+        padding: 0px 0px;
+        font-size: 13px;
+        width: 75px;
+        position: absolute;
+        left: 0;
+        top: -25px;
+    }
+}
+.coffee_block {
+    margin: 96px 0;
+    display: grid;
+    &_espresso, &_makkiato, &_latte, &_mokka, &_americano, &_kapuchino {
+        border: $border;
+        border-radius: 20px;
+        position: relative;
+    }
+    &_espresso {
+        background-color: hsla(25, 100%, 9%, 1);  
+    }
+    &_makkiato {
+        background-color: hsla(25, 100%, 20%, 1);  
+    }
+    &_latte {
+        background-color: hsla(25, 73%, 36%, 1);  
+    }
+    &_mokka {
+        background-color: hsla(25, 100%, 21%, 1);
+    }
+    &_americano {
+        background-color: hsla(25, 100%, 12%, 1);  
+    }
+    &_kapuchino {
+        background-color: hsla(25, 88%, 28%, 1);  
+    }
+}
+
+.coffee {
+    margin: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    height: 150px;
+}
+
+footer {    
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    background: #8B4513;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.footer_img {        
+    margin: 0;
+    text-align: center;
+    
+}
+
+.footer_feature {
+    margin-left: 68px;
+    text-align: center;
+}
+
+a {
+    &:link {
+        text-decoration: none;
+        color: white;
+    }
+    &:hover, &:active {
+        text-decoration: none;
+        color: beige;
+    }
+    &:visited {        
+        text-decoration: underline;
+        color: white;
+    }
+}
+
